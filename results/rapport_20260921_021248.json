@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-09-21T02:12:48.025803",
+  "model_weights": "C:\\Users\\FA706\\IpssiDJ\\Weapon-detection\\runs\\detect\\results\\weapon_detector_v1\\weights\\best.pt",
+  "dataset": "C:\\Users\\FA706\\IpssiDJ\\Weapon-detection\\weapon-detection-resplit",
+  "classes": [
+    "Grenade",
+    "Knife",
+    "Missile",
+    "Pistol",
+    "Rifle"
+  ],
+  "split_ratios": {
+    "train": 0.7,
+    "valid": 0.2,
+    "test": 0.1
+  },
+  "train_config": {
+    "model": "yolov8s.pt",
+    "epochs": 100,
+    "imgsz": 640,
+    "batch": 16,
+    "patience": 20,
+    "conf_detect": 0.5,
+    "conf_eval": 0.001,
+    "iou": 0.45
+  },
+  "metrics": {
+    "mAP_50": 0.8345,
+    "mAP_50_95": 0.5758,
+    "precision": 0.8628,
+    "recall": 0.778
+  },
+  "interpretation": {
+    "mAP_50": "Précision moyenne à IoU=0.5 — métrique principale",
+    "mAP_50_95": "Métrique stricte standard COCO (plus exigeante)",
+    "precision": "Taux de vraies alertes parmi toutes les alertes émises (évite les faux positifs)",
+    "recall": "Taux d'armes détectées parmi toutes les armes présentes (évite les faux négatifs)"
+  },
+  "plots": [
+    "results\\plots\\ia_vs_humain.png",
+    "results\\plots\\performance_par_classe.png"
+  ]
+}

@@ -1,0 +1,4 @@
+.env
+/weapon-detection-raw
+/weapon-detection-resplit
+/.venv

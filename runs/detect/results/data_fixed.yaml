@@ -1,0 +1,10 @@
+names:
+- Grenade
+- Knife
+- Missile
+- Pistol
+- Rifle
+nc: 5
+test: C:\Users\FA706\IpssiDJ\Weapon-detection\weapon-detection-resplit\test\images
+train: C:\Users\FA706\IpssiDJ\Weapon-detection\weapon-detection-resplit\train\images
+val: C:\Users\FA706\IpssiDJ\Weapon-detection\weapon-detection-resplit\valid\images

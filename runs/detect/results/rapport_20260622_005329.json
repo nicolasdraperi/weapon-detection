@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-22T00:53:29.024675",
+  "model_weights": "C:\\Users\\FA706\\IpssiDJ\\Weapon-detection\\runs\\detect\\results\\weapon_detector_v1-2\\weights\\best.pt",
+  "classes": [
+    "Grenade",
+    "Knife",
+    "Missile",
+    "Pistol",
+    "Rifle"
+  ],
+  "dataset_source": "Roboflow : test-7awfy/weapon-detection-f1lih (v1)",
+  "train_config": {
+    "model": "yolov8s.pt",
+    "epochs": 100,
+    "imgsz": 640,
+    "batch": 16,
+    "patience": 20,
+    "conf": 0.5,
+    "iou": 0.45
+  },
+  "metrics": {
+    "mAP_50": 0.8345,
+    "mAP_50_95": 0.5758,
+    "precision": 0.8628,
+    "recall": 0.778
+  },
+  "interpretation": {
+    "mAP_50": "Précision moyenne à IoU=0.5 (métrique principale)",
+    "mAP_50_95": "Métrique stricte standard COCO",
+    "precision": "Taux de vraies alertes parmi toutes les alertes émises",
+    "recall": "Taux d'armes réellement détectées parmi toutes les armes présentes"
+  }
+}
